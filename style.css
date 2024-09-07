@@ -37,8 +37,6 @@ body {
 /* the meat and potatoes of the web page */
 
 main {
-    border: 5px solid cyan;
-
     display: flex;
     flex-direction: row;
 
