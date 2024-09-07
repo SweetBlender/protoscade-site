@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: #f1f5fa;
+  --secondary-color: #FFFFFF;
+
+  --shadow-color: #e1e5eb;
+
+  --text-color-1: #353b44;
+  --text-color-2: #aab2bd;
+}
+
+/* Here are the dark theme colors: */
+
+
+/*
+
+:root {
+  --primary-color: #1a1c24;
+  --secondary-color: #292e38;
+
+  --shadow-color: #13141a;
+
+  --text-color-1: #ffffff;
+  --text-color-2: #758099;
+}
+
+*/
+
+body {
+
+    background-color: yellow;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    box-shadow: 0px 0px 10px var(--shadow-color);
+
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+header ul li a {
+
+    font-family: "lato";
+    font-style: normal;
+
+    padding: 10px;
+    justify-content: center;
+
+    text-decoration: none;
+    color: var(--text-color-2);
+
+    transition: .2s;
+}
+
+header ul li a:hover {
+    color: var(--text-color-1);
+}
+
+/* the meat and potatoes of the web page */
+
+main {
+
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sections {
+    background-color: var(--secondary-color);
+    width: 25%;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px var(--shadow-color);
+
+    padding: 15px;
+}
+
+.sections-text {
+    margin-left: 10px;
+}
+
+/* form stuff */
+
+.sections input {
+    border: 2px solid var(--shadow-color);
+    border-radius: 7px;
+    padding-left: 10px;
+
+    outline: none;
+
+    font-family: "lato";
+    font-style: normal;
+    color: var(--text-color-2);
+    font-size: 12px;
+
+    width: 100%;
+    height: 35px;
+
+    transition: .2s;
+}
+
+.userinput {
+    margin-right: 20px;
+}
+
+input:focus {
+    border-color: #00a2ff;
+    box-shadow: 0px 0px 7px #90c4ff;
+}
+
+/* button */
+
+.button {
+    color: white;
+    background-color: #008cff;
+    text-align: bold;
+    border-radius: 7px;
+
+    font-family: "lato";
+    font-style: normal;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 95%;
+    padding: 10px;
+
+    transition: .2s;
+}
+
+.button:hover {
+    background-color: #17a2ff;
+}
+
+/* text stuff */
+
+hr {
+    border: 1.5px solid var(--shadow-color);
+}
+
+h2 {
+    font-family: "lato";
+    font-style: bold;
+    
+    color: var(--text-color-1);
+}
+
+h4 {
+    font-family: "lato";
+    font-style: bold;
+    
+    color: var(--text-color-1);
+}
+
+p {
+    font-family: "lato";
+    font-style: normal;
+
+    color: var(--text-color-2);
+}
